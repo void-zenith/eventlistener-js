@@ -1,0 +1,47 @@
+.header-container {
+    text-align: center;
+}
+
+.randomImage{
+    width: 400px;
+    height: 400px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.automaticTime {
+    padding: 5px;
+}
+.automaticTime.red {
+    background-color: red;
+}
+.automaticTime.green {
+    background-color: green;
+}
+.automaticTime.orange{
+    background-color: orange;
+}
+
+.footer-container{
+    background-color: #d3d3d3;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply spin animation to elements with the 'spin' class */
+img.spin {
+    animation: spin 1s linear normal;
+    /* 1s duration, linear easing, infinite loop */
+}
